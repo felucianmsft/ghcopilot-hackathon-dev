@@ -3,12 +3,6 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/ado-repo",
-	"features": {
-		"ghcr.io/microsoft/codespace-features/external-repository:latest": {
-		   "cloneUrl": "https://hackaton-devs@dev.azure.com/hackaton-devs/hackaton-devs/_git/hackaton-devs",
-		   "folder": "/workspaces/ado-repo"
-		}
-	},
 	"customizations": {
 		"vscode": {
 			"settings": { 
@@ -38,8 +32,6 @@
 		}
 	},
 	"onCreateCommand": "dotnet tool install --global dotnet-ef --version 8.0.1",
-	"initializeCommand": "mkdir -p ${localWorkspaceFolder}/../ado-repo",
-	"postStartCommand": "external-git clone && external-git config",
 	"postAttachCommand":"mkdir -p ~/.sqlsecrets && echo \"{\\\"credentials\\\":[{\\\"credentialId\\\":\\\"Microsoft.SqlTools|itemtype:Profile|server:localhost|user:sa\\\",\\\"password\\\":\\\"P@ssw0rd\\\"}]}\" > ~/.sqlsecrets/sqlsecrets.json",
 	"remoteEnv": {
 		"ASPNETCORE_Kestrel__Certificates__Default__Password": "devcertpwd",
