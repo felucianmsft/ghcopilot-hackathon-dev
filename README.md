@@ -15,14 +15,14 @@ Welcome to the Developers Hackathon. The goal is to develop a software described
 4) Select the branch corresponding to your username (i.e. devuser01)
 5) Happy coding 😊
 
-# Goal: Audiologist App 👂
+# Challenge: Create a Fully Working Audiologist App 👂
 
 The basic workflow of the Application would be as follows:  
 	• Audiologist can enter customer data such as name, age, contact information, etc. This data gets stored in the Azure SQL Database.  
 	• Audiologist can then enter prescription data for each customer - details of their eye check-up, prescribed glasses/lenses, etc. This data is also stored in the Azure SQL Database.  
 	• The app service then retrieves this data from the database and presents it in a user-friendly format. Audiologist can view, update or delete the data as required.  
 
-## Challenges ## 
+## Sub-challenges ## 
 
 1. User Interface:
    - The system is a WebApplication and should have an intuitive, user-friendly interface.
